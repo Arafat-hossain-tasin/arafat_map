@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Public Transport Route Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Dynamic Public Transport Route Finder (Savar)</h2>
+<p>Type any start & destination in Savar and get live route & distance!</p>
+
+<div class="controls">
+    <input type="text" id="source" placeholder="Start Location (e.g., Ashulia, Savar)" />
+    <input type="text" id="destination" placeholder="Destination (e.g., Savar College, Savar)" />
+    <button onclick="findRoute()">Find Route</button>
+    <button onclick="resetMap()">Reset</button>
+</div>
+
+<div id="info"></div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
