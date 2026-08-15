@@ -14,7 +14,7 @@ map.setMaxBounds([
 
 let routeLine;
 
-// Geocode function: convert place name to coordinates
+// Geocode function convert place name to coordinates
 async function geocode(place) {
     const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(place)}`;
     const res = await fetch(url);
@@ -24,7 +24,7 @@ async function geocode(place) {
 }
 
 // OpenRouteService API Key
-const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjdiNzNmY2JkZGZmODQzNzdhYjYxOTIwMWYwYjc0MWUxIiwiaCI6Im11cm11cjY0In0="; // 🔑 Replace with your OpenRouteService API key
+const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjdiNzNmY2JkZGZmODQzNzdhYjYxOTIwMWYwYjc0MWUxIiwiaCI6Im11cm11cjY0In0="; 
 
 // Find route dynamically
 async function findRoute() {
